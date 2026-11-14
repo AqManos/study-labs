@@ -1,0 +1,94 @@
+# ============================================================
+# .gitignore — что НЕ попадает в репозиторий
+# Файл лежит в корне проекта и действует на все вложенные папки.
+# Правило: всё, что можно пересоздать или что содержит секреты,
+# в Git не коммитим.
+# ============================================================
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# ---------- Node.js ----------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.cache/
+.parcel-cache/
+
+# ---------- Java / Kotlin / C# ----------
+target/
+bin/
+obj/
+*.class
+*.jar
+*.log
+
+# ---------- IDE и редакторы ----------
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+out/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# ---------- Секреты и локальные настройки ----------
+# .env и его варианты. В репозиторий можно класть только
+# .env.example с заглушками вместо реальных значений.
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+config.local.*
+credentials.json
+token.json
+
+# ---------- ОС ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Временные файлы ----------
+~$*
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+*.orig
+*.rej
+
+# ---------- Логи ----------
+*.log
+logs/
+
+# ---------- Резервные копии draw.io ----------
+*.drawio.bkp
+*.drawio.dtmp
